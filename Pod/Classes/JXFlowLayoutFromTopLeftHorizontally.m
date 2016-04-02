@@ -13,6 +13,7 @@
 -(instancetype)initWithFrame:(CGRect)frame configuration:(JXFlowLayoutConfiguration *)configuration
 {
     if (self=[super initWithFrame:frame configuration:configuration]) {
+        self.size=CGSizeMake(frame.size.width, 0);
         CGPoint origin=self.bounds.origin;
         self.nextItemPosition=CGPointMake(origin.x+self.configuration.paddingRight, origin.y+self.configuration.paddingTop);
         self.nextLinePosition=self.nextItemPosition;
@@ -21,11 +22,11 @@
     return self;
 }
 
--(void)appendItem:(UIView *)item
+-(CGFloat)appendItem:(UIView *)item
 {
     CGRect frame=item.frame;
     if (frame.size.width>self.bounds.size.width) {
-        return;
+        return self.size.height;
     }
     if (frame.size.width>self.availableSpace) {
         self.nextItemPosition=self.nextLinePosition;
@@ -49,6 +50,9 @@
     }else{
         self.nextItemPosition=CGPointMake(self.nextItemPosition.x+frame.size.width+self.configuration.itemGap, self.nextItemPosition.y);
     }
+    
+    self.size=CGSizeMake(self.size.width, self.nextLinePosition.y-self.configuration.lineGap+self.configuration.paddingBottom-self.bounds.origin.y);
+    return self.size.height;
 }
 
 @end
