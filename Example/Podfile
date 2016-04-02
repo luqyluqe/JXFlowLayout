@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'JXFlowLayout_Example', :exclusive => true do
+  pod 'JXFlowLayout', :path => '../'
+end
+
+target 'JXFlowLayout_Tests', :exclusive => true do
+  pod 'JXFlowLayout', :path => '../'
+
+  pod 'FBSnapshotTestCase'
+end
