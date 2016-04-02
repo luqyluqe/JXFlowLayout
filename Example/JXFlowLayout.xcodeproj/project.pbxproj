@@ -23,6 +23,12 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		A97A67C71CAF86D5003A1554 /* JXFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A97A67B71CAF86D5003A1554 /* JXFlowLayout.m */; };
+		A97A67C81CAF86D5003A1554 /* JXFlowLayoutConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A97A67B91CAF86D5003A1554 /* JXFlowLayoutConfiguration.m */; };
+		A97A67C91CAF86D5003A1554 /* JXFlowLayoutFromTopLeftHorizontally.m in Sources */ = {isa = PBXBuildFile; fileRef = A97A67BB1CAF86D5003A1554 /* JXFlowLayoutFromTopLeftHorizontally.m */; };
+		A97A67CA1CAF86D5003A1554 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A97A67BE1CAF86D5003A1554 /* Info.plist */; };
+		A97A67CB1CAF86D5003A1554 /* JXFlowLayout.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A97A67C01CAF86D5003A1554 /* JXFlowLayout.xcconfig */; };
+		A97A67CC1CAF86D5003A1554 /* JXFlowLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A97A67C11CAF86D5003A1554 /* JXFlowLayout-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +69,18 @@
 		6E7B86E5CECB3C2DA3354EDD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		72AB1DDD4A8CF4DC259BFCA3 /* Pods_JXFlowLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JXFlowLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A97A67B61CAF86D5003A1554 /* JXFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXFlowLayout.h; sourceTree = "<group>"; };
+		A97A67B71CAF86D5003A1554 /* JXFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXFlowLayout.m; sourceTree = "<group>"; };
+		A97A67B81CAF86D5003A1554 /* JXFlowLayoutConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXFlowLayoutConfiguration.h; sourceTree = "<group>"; };
+		A97A67B91CAF86D5003A1554 /* JXFlowLayoutConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXFlowLayoutConfiguration.m; sourceTree = "<group>"; };
+		A97A67BA1CAF86D5003A1554 /* JXFlowLayoutFromTopLeftHorizontally.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXFlowLayoutFromTopLeftHorizontally.h; sourceTree = "<group>"; };
+		A97A67BB1CAF86D5003A1554 /* JXFlowLayoutFromTopLeftHorizontally.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXFlowLayoutFromTopLeftHorizontally.m; sourceTree = "<group>"; };
+		A97A67BE1CAF86D5003A1554 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A97A67BF1CAF86D5003A1554 /* JXFlowLayout.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = JXFlowLayout.modulemap; sourceTree = "<group>"; };
+		A97A67C01CAF86D5003A1554 /* JXFlowLayout.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = JXFlowLayout.xcconfig; sourceTree = "<group>"; };
+		A97A67C11CAF86D5003A1554 /* JXFlowLayout-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JXFlowLayout-dummy.m"; sourceTree = "<group>"; };
+		A97A67C21CAF86D5003A1554 /* JXFlowLayout-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JXFlowLayout-prefix.pch"; sourceTree = "<group>"; };
+		A97A67C31CAF86D5003A1554 /* JXFlowLayout-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JXFlowLayout-umbrella.h"; sourceTree = "<group>"; };
 		B37803DDFD352AFDBE241832 /* Pods_JXFlowLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JXFlowLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD22850170405CAB54226E3D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +114,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				A97A67C61CAF86D5003A1554 /* Development Pods */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for JXFlowLayout */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -193,6 +212,60 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A97A67BC1CAF86D5003A1554 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A97A67B61CAF86D5003A1554 /* JXFlowLayout.h */,
+				A97A67B71CAF86D5003A1554 /* JXFlowLayout.m */,
+				A97A67B81CAF86D5003A1554 /* JXFlowLayoutConfiguration.h */,
+				A97A67B91CAF86D5003A1554 /* JXFlowLayoutConfiguration.m */,
+				A97A67BA1CAF86D5003A1554 /* JXFlowLayoutFromTopLeftHorizontally.h */,
+				A97A67BB1CAF86D5003A1554 /* JXFlowLayoutFromTopLeftHorizontally.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A97A67BD1CAF86D5003A1554 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A97A67BC1CAF86D5003A1554 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		A97A67C41CAF86D5003A1554 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A97A67BE1CAF86D5003A1554 /* Info.plist */,
+				A97A67BF1CAF86D5003A1554 /* JXFlowLayout.modulemap */,
+				A97A67C01CAF86D5003A1554 /* JXFlowLayout.xcconfig */,
+				A97A67C11CAF86D5003A1554 /* JXFlowLayout-dummy.m */,
+				A97A67C21CAF86D5003A1554 /* JXFlowLayout-prefix.pch */,
+				A97A67C31CAF86D5003A1554 /* JXFlowLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JXFlowLayout";
+			sourceTree = "<group>";
+		};
+		A97A67C51CAF86D5003A1554 /* JXFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				A97A67BD1CAF86D5003A1554 /* Pod */,
+				A97A67C41CAF86D5003A1554 /* Support Files */,
+			);
+			name = JXFlowLayout;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A97A67C61CAF86D5003A1554 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A97A67C51CAF86D5003A1554 /* JXFlowLayout */,
+			);
+			name = "Development Pods";
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,9 +349,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A97A67CA1CAF86D5003A1554 /* Info.plist in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				A97A67CB1CAF86D5003A1554 /* JXFlowLayout.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +466,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* JXAppDelegate.m in Sources */,
+				A97A67CC1CAF86D5003A1554 /* JXFlowLayout-dummy.m in Sources */,
+				A97A67C81CAF86D5003A1554 /* JXFlowLayoutConfiguration.m in Sources */,
+				A97A67C71CAF86D5003A1554 /* JXFlowLayout.m in Sources */,
+				A97A67C91CAF86D5003A1554 /* JXFlowLayoutFromTopLeftHorizontally.m in Sources */,
 				6003F5A7195388D20070C39A /* JXViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

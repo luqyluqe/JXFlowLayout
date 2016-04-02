@@ -1,0 +1,6 @@
+framework module JXFlowLayout {
+  umbrella header "JXFlowLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}

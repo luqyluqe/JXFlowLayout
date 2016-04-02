@@ -1,0 +1,21 @@
+PODS:
+  - FBSnapshotTestCase (2.1.0):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.0)
+  - FBSnapshotTestCase/Core (2.1.0)
+  - FBSnapshotTestCase/SwiftSupport (2.1.0):
+    - FBSnapshotTestCase/Core
+  - JXFlowLayout (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - JXFlowLayout (from `../`)
+
+EXTERNAL SOURCES:
+  JXFlowLayout:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 366ecd378511d7716c79991cd8067d1eed23578d
+  JXFlowLayout: b8fcd9300a894a88f5de59267ba983d65ec2a7cc
+
+COCOAPODS: 0.39.0
