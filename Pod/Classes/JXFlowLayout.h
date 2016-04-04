@@ -15,7 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) JXFlowLayoutConfiguration* configuration;
 
-@property (nonatomic,assign) CGSize size;
 @property (nonatomic,assign) CGPoint nextItemPosition;
 @property (nonatomic,assign) CGPoint nextLinePosition;
 @property (nonatomic,assign) CGFloat maxItemWidthInCurrentLine;

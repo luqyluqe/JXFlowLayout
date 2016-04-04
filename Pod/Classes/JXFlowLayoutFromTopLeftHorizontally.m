@@ -12,8 +12,7 @@
 
 -(instancetype)initWithFrame:(CGRect)frame configuration:(JXFlowLayoutConfiguration *)configuration
 {
-    if (self=[super initWithFrame:frame configuration:configuration]) {
-        self.size=CGSizeMake(frame.size.width, 0);
+    if (self=[super initWithFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, configuration.paddingTop+configuration.paddingBottom) configuration:configuration]) {
         CGPoint origin=self.bounds.origin;
         self.nextItemPosition=CGPointMake(origin.x+self.configuration.paddingRight, origin.y+self.configuration.paddingTop);
         self.nextLinePosition=self.nextItemPosition;
@@ -26,7 +25,7 @@
 {
     CGRect frame=item.frame;
     if (frame.size.width>self.bounds.size.width) {
-        return self.size.height;
+        return self.frame.size.height;
     }
     if (frame.size.width>self.availableSpace) {
         self.nextItemPosition=self.nextLinePosition;
@@ -51,8 +50,10 @@
         self.nextItemPosition=CGPointMake(self.nextItemPosition.x+frame.size.width+self.configuration.itemGap, self.nextItemPosition.y);
     }
     
-    self.size=CGSizeMake(self.size.width, self.nextLinePosition.y-self.configuration.lineGap+self.configuration.paddingBottom-self.bounds.origin.y);
-    return self.size.height;
+    CGRect tmp=self.frame;
+    tmp.size=CGSizeMake(self.frame.size.width, self.nextLinePosition.y-self.configuration.lineGap+self.configuration.paddingBottom-self.bounds.origin.y);
+    self.frame=tmp;
+    return self.frame.size.height;
 }
 
 @end
